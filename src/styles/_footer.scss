@@ -1,0 +1,70 @@
+.footer {
+  color: var(--text-color-one);
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 1rem 2rem;
+  background-color: var(--bg-color-two);
+}
+
+.siga {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  font-size: 1.3rem;
+  font-weight: 700;
+  text-decoration: none;
+  color: inherit;
+  text-align: center;
+  color: var(--text-color-three);
+
+  .redes-sociais {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+  }
+
+  svg {
+    width: 2.5rem;
+    height: 2.5rem;
+    cursor: pointer;
+    fill: var(--text-color-three);
+  }
+}
+
+.abertura {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  p {
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: var(--text-color-three);
+  }
+}
+
+.contato {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.3rem;
+  font-size: 1.5rem;
+
+  svg {
+    width: 2rem;
+    height: 2rem;
+    cursor: pointer;
+    fill: var(--text-color-three);
+  }
+
+  p {
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: var(--text-color-three);
+  }
+}
