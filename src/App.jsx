@@ -1,13 +1,13 @@
 import AOS from 'aos';
 import { useEffect } from 'react';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
-import Home from './components/home/Home';
+import Home from './pages/home/Home';
 import Header from './components/header/Header';
-import Cardapio from './components/cardapio/Cardapio';
-import ParaEmpresas from './components/para_empresas/ParaEmpresas';
-import SeuEvento from './components/seu_evento/SeuEvento';
-import Reservas from './components/reservas/Reservas';
-import Localizacao from './components/localizacao/Localizacao';
+import Cardapio from './pages/cardapio/Cardapio';
+import ParaEmpresas from './pages/para_empresas/ParaEmpresas';
+import SeuEvento from './pages/seu_evento/SeuEvento';
+import Reservas from './pages/reservas/Reservas';
+import Localizacao from './pages/localizacao/Localizacao';
 
 export default function App() {
   useEffect(() => {
