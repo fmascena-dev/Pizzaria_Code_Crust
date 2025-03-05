@@ -127,7 +127,7 @@ export default function Cardapio() {
           <div className="sessao-bebida">
             <h3>Suco Natural</h3>
             <p>340ml</p>
-            <p>(laranja, abacaxi, melancia, maracujá, morango e limão)</p>
+            <p>(Laranja, Abacaxi, Melancia, Maracujá, Morango e Limão)</p>
             <p>R$ 15,00</p>
           </div>
         </div>

@@ -15,7 +15,7 @@ import Footer from '../components/footer/Footer';
 export default function AppRoutes() {
   useEffect(() => {
     AOS.init({
-      duration: 1000,
+      duration: 1500,
       easing: 'ease-in-out',
       once: false,
       mirror: true,

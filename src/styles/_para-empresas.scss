@@ -1,0 +1,118 @@
+.para-empresa {
+  background-color: black;
+  font-family: 'Livvic', sans-serif;
+  /* padding: 40px; */
+  display: flex;
+  width: 100%;
+  padding: 4rem 0;
+}
+
+h1 {
+  color: white;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 70px;
+}
+
+h2 {
+  color: #d3bf26;
+  padding: 1rem;
+  font-weight: bold;
+  font-size: 30px;
+  text-align: center;
+}
+
+.logo {
+  margin: 2rem 0 0 3rem;
+  width: 20%;
+  margin-bottom: 2rem;
+
+  &:hover {
+    animation: translateY 0.5s infinite alternate ease-in-out;
+  }
+
+  @keyframes translateY {
+    from {
+      transform: translateY(0) scale(1);
+    }
+    to {
+      transform: translateY(-0.5rem) scale(1.1);
+    }
+  }
+}
+
+.partecentral {
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.formulario {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 40%;
+  position: relative;
+}
+
+.formulario form {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+  gap: 0rem;
+  margin-bottom: 2rem;
+}
+
+form input {
+  background-color: #d3bf26;
+  font-size: 1.2rem;
+  text-align: center;
+  padding: 0.3rem;
+  border-radius: 10px;
+  width: 100%;
+  border: none;
+}
+
+.formulario input::placeholder {
+  color: #000;
+}
+
+.btn-submit {
+  background-color: #d3bf26;
+  border: none;
+  width: 30%;
+  margin-top: 1.5rem;
+  border-radius: 10px;
+  font-weight: bold;
+  font-size: 15px;
+  cursor: pointer;
+  padding: 0.5rem 2rem;
+  color: black;
+}
+
+.btn-submit:hover {
+  background-color: transparent;
+  color: #FFF;
+  text-decoration: underline;
+//   box-shadow: 0 0 10px 10px rgba(255, 255, 0, 1);
+}
+
+.img1 {
+//   height: 70%;
+//   object-fit: cover;
+  z-index: -1;
+border: 1px solid red;
+}
+
+.img2 {
+  z-index: -1;
+  height: 80%;
+  object-fit: cover;
+}
