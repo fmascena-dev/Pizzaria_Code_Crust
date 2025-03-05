@@ -5,14 +5,14 @@ import 'aos/dist/aos.css';
 
 export default function Home() {
     return (
-        <main class="home">
-      <section class="inicio">
+        <main className="home">
+      <section className="inicio">
         <h1>Seja muito bem-vindo à Pizzaria</h1>
-        <img src={Logo} class="logo" alt="Logo Code&Crust" />
+        <img src={Logo} className="logo" alt="Logo Code&Crust" />
       </section>
-      <section class="historia">
+      <section className="historia">
         <h2>Conheça a Nossa História</h2>
-        <div class="paragrafos">
+        <div className="paragrafos">
           <p data-aos="fade-right">
             No coração de uma cidade vibrante, onde o amor pela tecnologia se
             encontrava com a paixão pela gastronomia, nasceu a Code&Crust
@@ -74,7 +74,7 @@ export default function Home() {
           </p>
         </div>
       </section>
-      <section class="img-final" data-aos="fade-right">
+      <section className="img-final" data-aos="fade-right">
         <img src={ImgTwo} alt="" />
       </section>
     </main>
