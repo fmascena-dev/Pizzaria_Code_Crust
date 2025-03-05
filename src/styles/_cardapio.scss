@@ -3,12 +3,6 @@
   flex-direction: column;
   gap: 2rem;
 
-  p {
-    color: var(--text-color-two);
-    margin-top: 10px;
-    font-size: 1.4rem;
-  }
-
   h1 {
     color: var(--text-color-four);
     text-align: center;
@@ -17,8 +11,21 @@
 }
 
 .logo-cardapio {
-  margin: 6rem 0 0 3rem;
+  margin: 2rem 0 0 3rem;
   width: 15%;
+
+  &:hover {
+      animation: translateY 0.5s infinite alternate ease-in-out;
+    }
+
+    @keyframes translateY {
+      from {
+        transform: translateY(0) scale(1);
+      }
+      to {
+        transform: translateY(-0.5rem) scale(1.1);
+      }
+    }
 }
 
 .menu-cardapio {
@@ -35,16 +42,76 @@
     border-radius: 10px;
     width: 350px;
     height: 500px;
+
+    &:hover {
+      animation: translateY 0.5s infinite alternate ease-in-out;
+    }
+
+    @keyframes translateY {
+      from {
+        transform: translateY(0) scale(1);
+      }
+      to {
+        transform: translateY(-0.5rem) scale(1.1);
+      }
+    }
+  }
+
+  p {
+    margin-top: 10px;
+    font-size: 1.4rem;
+    color: #fff;
   }
 }
 
 .pizza-salgada {
-    background-color: var(--bg-color-two);
+  background-color: var(--bg-color-two);
 
-    .salgada {
-        display: flex;
-        flex-direction: column;
-        padding: 2rem;
-        font-size: 1.4rem;
+  .salgada {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    font-size: 1.4rem;
+
+    p {
+      font-weight: 600;
+      font-size: 1.4rem;
     }
+  }
+
+  .sessao-pizza {
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    font-size: 1.4rem;
+
+    h3 {
+      text-decoration: underline;
+    }
+  }
 }
+
+.bebidas {
+  color: var(--text-color-four);
+  padding: 2rem;
+}
+
+.sessao-bebida {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  font-size: 1.4rem;
+
+  h3 {
+    text-decoration: underline;
+  }
+
+  p {
+    font-weight: normal;
+    margin-top: 5px;
+  }
+}
+ .sessao-doce {
+    background-color: var(--text-color-four);
+    padding: 2rem;
+ }

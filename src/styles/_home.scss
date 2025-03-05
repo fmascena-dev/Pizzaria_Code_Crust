@@ -25,14 +25,28 @@
   color: var(--text-color-two);
   font-size: 3rem;
   z-index: 0;
-  margin-top: 10rem;
+  margin-top: 5rem;
 }
 
 .logo {
   z-index: 0;
-  width: 20rem;
-  height: 20rem;
-  margin-top: -80px;
+  width: 250px;
+  height: 150px;
+  margin-top: 20px;
+  margin-bottom: 50px;
+
+  &:hover {
+      animation: translateY 0.5s infinite alternate ease-in-out;
+    }
+
+    @keyframes translateY {
+      from {
+        transform: translateY(0) scale(1);
+      }
+      to {
+        transform: translateY(-0.5rem) scale(1.1);
+      }
+    }
 }
 
 .home {
@@ -56,6 +70,7 @@
 
 .historia h2 {
   margin-bottom: 2rem;
+  font-size: 2.5rem;
 }
 
 .paragrafos {

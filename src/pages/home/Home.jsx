@@ -1,5 +1,5 @@
 import '../../styles/_home.scss'
-import Logo from '../../assets/home/Logo.png';
+import Logo from '../../assets/home/logo2.png';
 import ImgTwo from '../../assets/home/pizza1.jpg'
 import 'aos/dist/aos.css';
 

@@ -38,10 +38,11 @@ export default function Cardapio() {
 
       <section className="pizza-salgada" id="salgada">
         <div className="salgada">
-          <p>
+          <h3>
             Pizza meio a meio será cobrada pela média com opções integral e sem
             glúten.
-          </p>
+          </h3>
+
           <div className="sessao-pizza">
             <h3>Margherita</h3>
             <p>Molho de tomate especial, mozzarella e manjericão.</p>
@@ -53,7 +54,7 @@ export default function Cardapio() {
             <p>Molho de tomate, mozzarella de búfala e manjericão.</p>
             <p>Grande: R$ 114,00 | Pequeno: R$ 79,80</p>
           </div>
-          
+
           <div className="sessao-pizza">
             <h3>Nostra Burrata</h3>
             <p>
@@ -62,6 +63,7 @@ export default function Cardapio() {
             </p>
             <p>Grande: R$ 112,00 | Pequeno: R$78,40</p>
           </div>
+
           <div className="sessao-pizza">
             <h3>Napoletana</h3>
             <p>
@@ -69,11 +71,13 @@ export default function Cardapio() {
             </p>
             <p>Grande: R$ 106,00 | Pequeno: R$ 74,20</p>
           </div>
+
           <div className="sessao-pizza">
             <h3>Alici</h3>
             <p>Molho de tomate, filés de alici, alho cru e orégano.</p>
             <p>Grande: R$ 117,00 | Pequeno: R$ 81,90</p>
           </div>
+
         </div>
       </section>
 
@@ -136,7 +140,7 @@ export default function Cardapio() {
       <figure className="pessoal">
         <img
           className="img-final"
-          src="/images/Cardapio/image-final.png"
+          src={Pizza}
           alt="Pessoas comendo Pizza"
         />
       </figure>
