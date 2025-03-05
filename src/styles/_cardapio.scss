@@ -1,5 +1,50 @@
-.logo-cardapio {
-    margin: 6rem 0 0 3rem;
-    width: 20%;
+.cardapio {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+
+  p {
+    color: var(--text-color-two);
+    margin-top: 10px;
+    font-size: 1.4rem;
+  }
+
+  h1 {
+    color: var(--text-color-four);
+    text-align: center;
+    font-size: 3rem;
+  }
 }
 
+.logo-cardapio {
+  margin: 6rem 0 0 3rem;
+  width: 15%;
+}
+
+.menu-cardapio {
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+  text-align: center;
+  font-weight: 700;
+  margin: 2.5rem 0 2.5rem 0;
+
+  img {
+    border: 1px solid var(--text-color-two);
+    box-shadow: 0px 0px 10px var(--text-color-one);
+    border-radius: 10px;
+    width: 350px;
+    height: 500px;
+  }
+}
+
+.pizza-salgada {
+    background-color: var(--bg-color-two);
+
+    .salgada {
+        display: flex;
+        flex-direction: column;
+        padding: 2rem;
+        font-size: 1.4rem;
+    }
+}
