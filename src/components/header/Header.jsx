@@ -5,14 +5,14 @@ export default function Header() {
   return (
     <header className="header">
       <nav>
-        <NavLink to='/'>Home</NavLink>
-        <NavLink to='/cardapio'>Cardápio</NavLink>
-        <NavLink to='/para_empresas'>Para Empresas</NavLink>
+        <NavLink to='/'>HOME</NavLink>
+        <NavLink to='/cardapio'>CARDÁPIO</NavLink>
+        <NavLink to='/para_empresas'>PARA EMPRESAS</NavLink>
         </nav>
         <nav>
-        <NavLink to='/seu_evento'>Faça seu Evento</NavLink>
-        <NavLink to='/reservas'>Reservas</NavLink>
-        <NavLink to='/localizacao'>Localização</NavLink>
+        <NavLink to='/seu_evento'>FAÇA SEU EVENTO</NavLink>
+        <NavLink to='/reservas'>RESERVAS</NavLink>
+        <NavLink to='/localizacao'>LOCALIZAÇÃO</NavLink>
       </nav>
     </header>
   );

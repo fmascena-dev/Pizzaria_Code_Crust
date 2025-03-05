@@ -1,5 +1,3 @@
-import './criadores.css'
-
 export default function Criadores() {
     return (
         <div id="criadores">
