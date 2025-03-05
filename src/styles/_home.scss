@@ -1,0 +1,86 @@
+.inicio {
+  background-image: url('/src/assets/home/pizza3.png');
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  position: relative;
+  width: 100%;
+}
+
+.inicio::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.inicio h1 {
+  color: var(--text-color-two);
+  font-size: 3rem;
+  z-index: 0;
+  margin-top: 10rem;
+}
+
+.logo {
+  z-index: 0;
+  width: 20rem;
+  height: 20rem;
+  margin-top: -80px;
+}
+
+.home {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+}
+
+.historia {
+  width: 80%;
+  color: var(--text-color-one);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 4rem 0rem;
+}
+
+.historia h2 {
+  margin-bottom: 2rem;
+}
+
+.paragrafos {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 2rem;
+  text-align: justify;
+}
+
+.paragrafos p {
+  font-weight: 500;
+  font-size: 1.3rem;
+}
+
+.img-final {
+  width: 100%;
+}
+
+.img-final img {
+  width: 100%;
+  height: 450px;
+  object-fit: cover;
+  z-index: 0;
+  position: relative;
+  bottom: 0;
+  opacity: 30%;
+}

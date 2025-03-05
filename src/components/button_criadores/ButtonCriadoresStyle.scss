@@ -1,0 +1,14 @@
+.button-criadores {
+    background-color: transparent;
+    border: 1px solid var(--bg-color-one);
+    padding: 0.3rem 0.5rem;
+    border-radius: 0.5rem;
+    margin-left: 0.3rem;
+    font-size: 1.2rem;
+    cursor: pointer;
+    font-weight: 700;
+
+    &:hover {
+        box-shadow: 1px 1px 5px 2px var(--bg-color-one);
+    }
+}
