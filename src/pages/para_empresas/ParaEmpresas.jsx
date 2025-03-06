@@ -1,8 +1,8 @@
 import '../../styles/_para-empresas.scss';
 import { useForm } from 'react-hook-form';
-import Logo from '../../assets/para-empresas/logo2.png'
-import ImageOne from '../../assets/para-empresas/imagem1.png'
-import ImageTwo from '../../assets/para-empresas/imagem2.png'
+import Logo from '../../assets/para-empresas/logo2.png';
+import ImageOne from '../../assets/para-empresas/pizza1.png';
+import ImageTwo from '../../assets/para-empresas/pizza2.png';
 import { Button } from '@mui/material';
 
 export default function ParaEmpresas() {
@@ -19,10 +19,10 @@ export default function ParaEmpresas() {
 
   return (
     <section className="para-empresas">
-        <div className="logo">
-          <img src={Logo}alt="Logo da empresa" />
-        </div>
       <section className="partecima">
+        <div className="logo-empresas">
+          <img src={Logo} alt="Logo da empresa" />
+        </div>
         <div>
           <img
             className="img1"
@@ -32,6 +32,7 @@ export default function ParaEmpresas() {
         </div>
       </section>
 
+      <section className="partecentral">
         <div>
           <h1>
             "Cadastre sua empresa e ofereça benefícios incríveis aos seus
@@ -39,14 +40,14 @@ export default function ParaEmpresas() {
             deliciosas e transforme o dia a dia do seu time! 🍕✨"
           </h1>
         </div>
-      <section className="partecentral">
-
         <div className="formulario">
           <form onSubmit={handleSubmit(onSubmit)}>
             <h2>Cadastro</h2>
 
             {/* Campo Empresa */}
-            <label>*Empresa:</label>
+            <label>
+              Empresa: <span>*</span>
+            </label>
             <input
               type="text"
               placeholder="Nome da Empresa"
@@ -59,7 +60,9 @@ export default function ParaEmpresas() {
             )}
 
             {/* Campo Responsável */}
-            <label>*Responsável:</label>
+            <label>
+              Responsável: <span>*</span>
+            </label>
             <input
               type="text"
               placeholder="Responsável pelo cadastro"
@@ -72,7 +75,9 @@ export default function ParaEmpresas() {
             )}
 
             {/* Campo Telefone */}
-            <label>*Telefone:</label>
+            <label>
+              Telefone: <span>*</span>
+            </label>
             <input
               type="tel"
               placeholder="Telefone"
@@ -85,7 +90,9 @@ export default function ParaEmpresas() {
             )}
 
             {/* Campo Email */}
-            <label>*E-mail:</label>
+            <label>
+              E-mail: <span>*</span>
+            </label>
             <input
               type="email"
               placeholder="Email"
@@ -102,7 +109,9 @@ export default function ParaEmpresas() {
             )}
 
             {/* Campo Benefícios */}
-            <label>*Benefícios:</label>
+            <label>
+              Benefícios: <span>*</span>
+            </label>
             <input
               type="text"
               placeholder="Descrição dos benefícios"
@@ -113,20 +122,21 @@ export default function ParaEmpresas() {
             {errors.beneficios && (
               <span className="helper-text">{errors.beneficios.message}</span>
             )}
-
           </form>
-            {/* Botão de Envio */}
-            <Button variant='outlined' className='btn-submit' type="submit">ENVIAR</Button>
+          {/* Botão de Envio */}
+          <button className="btn-submit" type="submit">
+            ENVIAR
+          </button>
+          <div className="preenchimento">
+            <span>*</span>
+            <p>Preenchimento obrigatório</p>
+          </div>
         </div>
       </section>
 
       <div>
-        <img
-          className="img2"
-          src={ImageTwo}
-          alt="Pizza caindo"
-        />
+        <img className="img2" src={ImageTwo} alt="Pizza caindo" />
       </div>
     </section>
   );
-};
+}

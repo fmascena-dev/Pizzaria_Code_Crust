@@ -44,10 +44,11 @@ export default function Home() {
         <div className="paragrafos">
           <p data-aos="fade-right">
             No coração de uma cidade vibrante, onde o amor pela tecnologia se
-            encontrava com a paixão pela gastronomia, nasceu a Code&Crust
-            Pizzaria. A história começa com dois amigos de infância, Lucas e
-            Ana, que sempre sonharam em criar um espaço onde pudessem unir suas
-            duas grandes paixões: a programação e a culinária.
+            encontrava com a paixão pela gastronomia, nasceu a{' '}
+            <strong>Code&Crust Pizzaria</strong>. A história começa com dois
+            amigos de infância, Lucas e Ana, que sempre sonharam em criar um
+            espaço onde pudessem unir suas duas grandes paixões: a programação e
+            a culinária.
           </p>
           <p data-aos="fade-left">
             Lucas, um talentoso desenvolvedor de software, sempre passava horas
@@ -70,7 +71,7 @@ export default function Home() {
             qualidade.
           </p>
           <p data-aos="fade-left">
-            Com o plano em mente, eles decidiram abrir a
+            Com o plano em mente, eles decidiram abrir a{' '}
             <strong>Code&Crust Pizzaria</strong>, um lugar onde a tecnologia e a
             culinária se encontrariam. O conceito era simples: cada pizza seria
             uma obra de arte, assim como um código bem escrito. O nome

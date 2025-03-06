@@ -1,14 +1,16 @@
 .button-criadores {
     background-color: transparent;
     border: 1px solid var(--bg-color-one);
-    padding: 0rem 0.5rem;
-    border-radius: 0.5rem;
+    padding: 0.3rem 0.5rem;
+    border-radius: 0.4rem;
     margin-left: 0.3rem;
     cursor: pointer;
     font-weight: 700;
     color: var(--text-color-three);
 
     &:hover {
-        box-shadow: 1px 1px 5px 2px var(--bg-color-one);
+        background-color: var(--bg-color-one);
+        color: var(--text-color-four);
+        border: 1px solid var(--bg-color-two);
     }
 }

@@ -8,12 +8,11 @@ export default function ButtonCriadores() {
   return (
     // <button onClick={() => navigate('/criadores')} className="button-criadores">Criadores</button>
 
-    <Button
-      variant="outlined"
+    <button
       className="button-criadores"
       onClick={() => navigate('/criadores')}
     >
-      Criadores
-    </Button>
+      CRIADORES
+    </button>
   );
 }
