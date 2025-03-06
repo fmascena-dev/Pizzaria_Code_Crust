@@ -79,7 +79,7 @@
 
   .preenchimento span {
     color: #FF0000;
-    font-size: 1.5rem;
+    font-size: 1.1rem;
   }
   
   .preenchimento p {
@@ -99,7 +99,7 @@
 
   label span {
     color: #FF0000;
-    font-size: 1.5rem;
+    font-size: 1.1rem;
   }
 }
 
@@ -121,7 +121,6 @@ form input {
 .formulario input::placeholder {
   color: var(--text-color-three);
   font-weight: 500;
-  // padding-left: 0.5rem;
 }
 
 .formulario input:focus {
@@ -137,22 +136,21 @@ form input {
 
 .btn-submit {
   background-color: #d3bf26;
-  border: none;
+  border: 1px solid transparent;
   width: 30%;
-  // margin-top: 1rem;
   border-radius: 10px;
   font-weight: bold;
   font-size: 15px;
   cursor: pointer;
   padding: 0.5rem 2rem;
-  color: black;
+  color: var(--bg-color-one);
 }
 
 .btn-submit:hover {
   background-color: transparent;
   color: #fff;
-  text-decoration: underline;
-  //   box-shadow: 0 0 10px 10px rgba(255, 255, 0, 1);
+  // text-decoration: underline;
+  border: 1px solid rgba(255, 255, 0, 1);
 }
 
 .img2 {
