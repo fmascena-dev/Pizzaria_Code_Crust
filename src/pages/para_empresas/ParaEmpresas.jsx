@@ -3,9 +3,32 @@ import { useForm } from 'react-hook-form';
 import Logo from '../../assets/para-empresas/logo2.png';
 import ImageOne from '../../assets/para-empresas/pizza1.png';
 import ImageTwo from '../../assets/para-empresas/pizza2.png';
-import { Button } from '@mui/material';
+import { useEffect, useState } from 'react';
+import { FaArrowUp } from 'react-icons/fa';
 
 export default function ParaEmpresas() {
+  const [showButton, setShowButton] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 200) {
+        setShowButton(true);
+      } else {
+        setShowButton(false);
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
+
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth',
+    });
+  };
+
   const {
     register,
     handleSubmit,
@@ -16,6 +39,7 @@ export default function ParaEmpresas() {
     console.log('Dados enviados:', data);
     alert('Cadastro enviado com sucesso!');
   };
+
 
   return (
     <section className="para-empresas">
@@ -44,7 +68,6 @@ export default function ParaEmpresas() {
           <form onSubmit={handleSubmit(onSubmit)}>
             <h2>Cadastro</h2>
 
-            {/* Campo Empresa */}
             <label>
               Empresa: <span>*</span>
             </label>
@@ -53,13 +76,17 @@ export default function ParaEmpresas() {
               placeholder="Nome da Empresa"
               {...register('empresa', {
                 required: 'O nome da empresa é obrigatório',
+                minLength: { value: 3, message: 'Mínimo 3 caracteres' },
+                pattern: {
+                  value: /^[A-Za-zÀ-ÖØ-öø-ÿ\s]+$/,
+                  message: 'Somente letras',
+                },
               })}
             />
             {errors.empresa && (
               <span className="helper-text">{errors.empresa.message}</span>
             )}
 
-            {/* Campo Responsável */}
             <label>
               Responsável: <span>*</span>
             </label>
@@ -68,13 +95,17 @@ export default function ParaEmpresas() {
               placeholder="Responsável pelo cadastro"
               {...register('responsavel', {
                 required: 'O nome do responsável é obrigatório',
+                minLength: { value: 3, message: 'Mínimo 3 caracteres' },
+                pattern: {
+                  value: /^[A-Za-zÀ-ÖØ-öø-ÿ\s]+$/,
+                  message: 'Somente letras',
+                },
               })}
             />
             {errors.responsavel && (
               <span className="helper-text">{errors.responsavel.message}</span>
             )}
 
-            {/* Campo Telefone */}
             <label>
               Telefone: <span>*</span>
             </label>
@@ -83,13 +114,16 @@ export default function ParaEmpresas() {
               placeholder="Telefone"
               {...register('telefone', {
                 required: 'O telefone é obrigatório',
+                pattern: {
+                  value: /^\(\d{2}\) \d{5}-\d{4}$/,
+                  message: 'Formato inválido: (99) 99999-9999',
+                },
               })}
             />
             {errors.telefone && (
               <span className="helper-text">{errors.telefone.message}</span>
             )}
 
-            {/* Campo Email */}
             <label>
               E-mail: <span>*</span>
             </label>
@@ -104,11 +138,11 @@ export default function ParaEmpresas() {
                 },
               })}
             />
+
             {errors.email && (
               <span className="helper-text">{errors.email.message}</span>
             )}
 
-            {/* Campo Benefícios */}
             <label>
               Benefícios: <span>*</span>
             </label>
@@ -117,16 +151,20 @@ export default function ParaEmpresas() {
               placeholder="Descrição dos benefícios"
               {...register('beneficios', {
                 required: 'A descrição dos benefícios é obrigatória',
+                minLength: { value: 10, message: 'Mínimo 10 caracteres' },
               })}
             />
             {errors.beneficios && (
               <span className="helper-text">{errors.beneficios.message}</span>
             )}
+
+            <div className="btn-enviar">
+              <button className="btn-submit" type="submit">
+                ENVIAR
+              </button>
+            </div>
           </form>
-          {/* Botão de Envio */}
-          <button className="btn-submit" type="submit">
-            ENVIAR
-          </button>
+
           <div className="preenchimento">
             <span>*</span>
             <p>Preenchimento obrigatório</p>
@@ -137,6 +175,12 @@ export default function ParaEmpresas() {
       <div>
         <img className="img2" src={ImageTwo} alt="Pizza caindo" />
       </div>
+
+      {showButton && (
+        <button className="scroll-to-top" onClick={scrollToTop}>
+          <FaArrowUp />
+        </button>
+      )}
     </section>
   );
 }
