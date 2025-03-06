@@ -4,33 +4,9 @@ import Drink from '../../assets/cardapio/image2.png';
 import PizzaInteira from '../../assets/cardapio/image3.png';
 import Pizza from '../../assets/cardapio/image-final.png';
 import Logo from '../../assets/home/logo2.png';
-import { useState } from 'react';
-import { useEffect } from 'react';
-import { FaArrowUp } from 'react-icons/fa';
+import ButtonScroll from '../../components/button-scroll/ButtonScroll';
 
 export default function Cardapio() {
-  const [showButton, setShowButton] = useState(false);
-
-  useEffect(() => {
-    const handleScroll = () => {
-      if (window.scrollY > 400) {
-        setShowButton(true);
-      } else {
-        setShowButton(false);
-      }
-    };
-
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
-  }, []);
-
-  const scrollToTop = () => {
-    window.scrollTo({
-      top: 0,
-      behavior: 'smooth',
-    });
-  };
-
   return (
     <section className="cardapio">
       <img
@@ -165,11 +141,7 @@ export default function Cardapio() {
         <img className="img-final" src={Pizza} alt="Pessoas comendo Pizza" />
       </figure>
 
-      {showButton && (
-        <button className="scroll-to-top" onClick={scrollToTop}>
-          <FaArrowUp />
-        </button>
-      )}
+      <ButtonScroll />
     </section>
   );
 }

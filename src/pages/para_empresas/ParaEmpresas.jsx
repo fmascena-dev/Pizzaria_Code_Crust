@@ -3,32 +3,9 @@ import { useForm } from 'react-hook-form';
 import Logo from '../../assets/para-empresas/logo2.png';
 import ImageOne from '../../assets/para-empresas/pizza1.png';
 import ImageTwo from '../../assets/para-empresas/pizza2.png';
-import { useEffect, useState } from 'react';
-import { FaArrowUp } from 'react-icons/fa';
+import ButtonScroll from '../../components/button-scroll/ButtonScroll';
 
 export default function ParaEmpresas() {
-  const [showButton, setShowButton] = useState(false);
-
-  useEffect(() => {
-    const handleScroll = () => {
-      if (window.scrollY > 200) {
-        setShowButton(true);
-      } else {
-        setShowButton(false);
-      }
-    };
-
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
-  }, []);
-
-  const scrollToTop = () => {
-    window.scrollTo({
-      top: 0,
-      behavior: 'smooth',
-    });
-  };
-
   const {
     register,
     handleSubmit,
@@ -176,11 +153,7 @@ export default function ParaEmpresas() {
         <img className="img2" src={ImageTwo} alt="Pizza caindo" />
       </div>
 
-      {showButton && (
-        <button className="scroll-to-top" onClick={scrollToTop}>
-          <FaArrowUp />
-        </button>
-      )}
+      <ButtonScroll />
     </section>
   );
 }

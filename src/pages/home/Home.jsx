@@ -1,38 +1,10 @@
 import '../../styles/_home.scss';
 import Logo from '../../assets/home/logo2.png';
 import ImgTwo from '../../assets/home/pizza1.jpg';
-import AOS from 'aos';
 import 'aos/dist/aos.css';
-import { useEffect, useState } from 'react';
-import { FaArrowUp } from 'react-icons/fa';
+import ButtonScroll from '../../components/button-scroll/ButtonScroll';
 
 export default function Home() {
-  const [showButton, setShowButton] = useState(false);
-
-  useEffect(() => {
-    const handleScroll = () => {
-      if (window.scrollY > 400) {
-        setShowButton(true);
-      } else {
-        setShowButton(false);
-      }
-    };
-
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
-  }, []);
-
-  const scrollToTop = () => {
-    window.scrollTo({
-      top: 0,
-      behavior: 'smooth',
-    });
-  };
-
-  useEffect(() => {
-    AOS.init({ duration: 1000 });
-  }, []);
-
   return (
     <main className="home">
       <section className="inicio">
@@ -108,11 +80,7 @@ export default function Home() {
         <img src={ImgTwo} alt="" />
       </section>
 
-      {showButton && (
-        <button className="scroll-to-top" onClick={scrollToTop}>
-          <FaArrowUp />
-        </button>
-      )}
+      <ButtonScroll />
     </main>
   );
 }

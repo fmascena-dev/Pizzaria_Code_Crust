@@ -7,6 +7,7 @@
     cursor: pointer;
     font-weight: 700;
     color: var(--text-color-three);
+    transition: all 0.3s ease-in-out;
 
     &:hover {
         background-color: var(--bg-color-one);
