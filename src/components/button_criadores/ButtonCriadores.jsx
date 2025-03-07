@@ -1,4 +1,3 @@
-import { Button } from '@mui/material';
 import './ButtonCriadoresStyle.scss'
 import { useNavigate } from 'react-router-dom';
 
@@ -11,6 +10,7 @@ export default function ButtonCriadores() {
     <button
       className="button-criadores"
       onClick={() => navigate('/criadores')}
+      target
     >
       CRIADORES
     </button>

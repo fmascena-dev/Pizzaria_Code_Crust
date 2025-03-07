@@ -7,6 +7,7 @@ import Priscila from '../../assets/criadores/Priscila.jpg'
 import AOS from 'aos';
 import { MdOutlineEmail } from 'react-icons/md';
 import { FaGithub, FaLinkedin } from 'react-icons/fa';
+import ButtonVoltar from '../../components/button-voltar/ButtonVoltar';
 
 export default function Criadores() {
     AOS.init({
@@ -169,6 +170,7 @@ export default function Criadores() {
             </figcaption>
           </figure>
         </section>
+        <ButtonVoltar />
       </section>
     );
 };
