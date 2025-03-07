@@ -30,21 +30,20 @@
 }
 
 .bem-vindo {
-  background-color: #d3bf26;
-  color: #000;
-  padding: 5rem 8rem;
-}
+  background-color: var(--bg-color-two);
+  color: var(--text-color-three);
+  padding: 5rem;
 
-.bem-vindo p {
-  font-weight: 500;
-  font-size: 1.5rem;
-  padding: 0 9rem;
+  p {
+    font-weight: 500;
+    font-size: 1.5rem;
+  }
 }
 
 .eventos {
   font-size: 1.4rem;
   padding: 5rem 10rem;
-  color: #d3bf26;
+  color: var(--text-color-four);
 }
 
 .div-eventos {
@@ -68,7 +67,7 @@ span {
 .form-container {
   background-color: var(--bg-color-one);
   padding: 3rem 10rem;
-  color: #000;
+  color: var(--text-color-three);
 }
 
 .div-form {
@@ -80,11 +79,13 @@ span {
 
   h3 {
     color: var(--text-color-four);
+    font-size: 2rem;
+    margin-bottom: 2rem;
   }
 }
 
 .div-form p {
-  color: #000;
+  color: var(--text-color-three);
   padding: 0 8rem;
   font-weight: 500;
 }
@@ -118,7 +119,7 @@ span {
 }
 
 .div-form form input:focus {
-    border: none;
+  border: none;
   box-shadow: 0 0 5px 5px rgba(255, 230, 0, 0.322);
   outline: 1px solid var(--bg-color-two);
   outline-offset: 2px;
@@ -153,11 +154,11 @@ span {
   display: flex;
   justify-content: center;
 
-p {
-  width: 50%;
-  font-size: 1.2rem;
-  text-align: center;
-  color: var(--text-color-four);
-  font-weight: bold;
-}
+  p {
+    width: 50%;
+    font-size: 1.5rem;
+    text-align: center;
+    color: var(--text-color-four);
+    font-weight: bold;
+  }
 }

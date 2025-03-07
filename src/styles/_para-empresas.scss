@@ -78,10 +78,10 @@
   }
 
   .preenchimento span {
-    color: #FF0000;
+    color: #ff0000;
     font-size: 1.1rem;
   }
-  
+
   .preenchimento p {
     color: var(--text-color-one);
     font-size: 1.25rem;
@@ -98,7 +98,7 @@
   margin-bottom: 2rem;
 
   label span {
-    color: #FF0000;
+    color: #ff0000;
     font-size: 1.1rem;
   }
 }
@@ -145,7 +145,7 @@ form input {
 }
 
 .btn-submit {
-  background-color: #d3bf26;
+  background-color: var(--bg-color-two);
   border: 1px solid transparent;
   width: 30%;
   border-radius: 10px;
