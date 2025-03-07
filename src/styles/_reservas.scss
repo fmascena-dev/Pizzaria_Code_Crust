@@ -45,7 +45,7 @@
 
 .formulario input {
   padding: 10px;
-//   border: black;
+  //   border: black;
   background-color: var(--bg-color-two);
   width: 40%;
   border-radius: 10px;
@@ -68,8 +68,11 @@
   font-weight: 500;
 }
 
-.erro {
+.error-message {
+  color: #ff0000;
+  padding: 0.3rem 1rem;
   border: 1px solid red;
+  border-radius: 10px;
 }
 
 .button-container {
