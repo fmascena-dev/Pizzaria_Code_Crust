@@ -101,7 +101,7 @@ export default function SeuEvento() {
                 <span className="error">{errors.pessoas.message}</span>
               )}
 
-              <button type="submit">Reservar</button>
+              <button type="submit" className='btn-reserva'>RESERVAR</button>
             </form>
           </div>
         </section>
