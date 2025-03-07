@@ -37,6 +37,7 @@
   p {
     font-weight: 500;
     font-size: 1.5rem;
+    margin-left: 5rem;
   }
 }
 
@@ -50,23 +51,24 @@
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
-}
 
-.div-eventos li {
-  margin-left: 3rem;
+  li {
+    margin-left: 3rem;
+  }
 }
 
 .eventos h2 {
   text-align: center;
 }
 
-span {
-  font-weight: bold;
+.seu-evento {
+  span {
+    font-weight: bold;
+  }
 }
 
 .form-container {
   background-color: var(--bg-color-one);
-  padding: 3rem 10rem;
   color: var(--text-color-three);
 }
 
@@ -94,7 +96,7 @@ span {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 50%;
+  width: 40%;
   gap: 1rem;
 }
 
@@ -137,6 +139,7 @@ span {
   height: 50px;
   margin-top: 2rem;
   border-radius: 0.5rem;
+  font-size: 1.1rem;
   cursor: pointer;
   font-weight: bold;
   transition: all 0.3s ease-in-out;
