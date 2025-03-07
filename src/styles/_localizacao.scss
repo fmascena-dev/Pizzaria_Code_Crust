@@ -1,0 +1,128 @@
+.localizacao {
+  width: 100%;
+}
+
+.logo-localizacao {
+  width: 25%;
+  padding: 2rem;
+
+  &:hover {
+    animation: translateY 0.5s infinite alternate ease-in-out;
+  }
+
+  @keyframes translateY {
+    from {
+      transform: translateY(0) scale(1);
+    }
+    to {
+      transform: translateY(-0.5rem) scale(1.1);
+    }
+  }
+}
+
+.container-principal {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.search {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+  width: 48%;
+}
+
+.search h1 {
+  background-color: var(--bg-color-two);
+  color: black;
+  padding: 10px 20px;
+  font-size: 2.5em;
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 2rem;
+  width: 100%;
+}
+
+.search h3 {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+  color: white;
+  margin: 2rem 0;
+}
+
+.search form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.search input,
+.search button {
+  padding: 20px 20px;
+  border-radius: 0.5rem;
+  width: 350px;
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+.search input {
+  margin-bottom: 10px;
+}
+
+.search input::placeholder {
+  color: var(--text-color-three);
+  font-weight: 500;
+}
+
+.search input:focus {
+  border: none;
+  box-shadow: 0 0 5px 5px rgba(255, 230, 0, 0.322);
+  outline: 1px solid var(--bg-color-two);
+  outline-offset: 2px;
+}
+
+.encontre-loja {
+  background-color: transparent;
+  color: var(--text-color-four);
+  font-weight: 500;
+  border: 1px solid var(--bg-color-two);
+  cursor: pointer;
+  transition: all 0.4s ease-in-out;
+}
+
+.encontre-loja:hover {
+  background-color: var(--bg-color-two);
+  color: var(--text-color-three);
+  border: 1px solid transparent;
+}
+
+.search div {
+  margin-top: 20px;
+  color: var(--text-color-four);
+  font-size: 1.5rem;
+  border: 1px solid red;
+  border-radius: 0.5rem;
+  padding: 0.3rem 1rem;
+}
+
+.map {
+  width: 45%;
+  padding: 1rem 4rem;
+}
+
+.map img {
+  width: 100%;
+}
+
+.pictures {
+  display: flex;
+  margin: 40px 0px;
+}
+
+.pictures img {
+  width: 50%;
+  object-fit: cover;
+}

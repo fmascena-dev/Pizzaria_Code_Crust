@@ -42,7 +42,7 @@ export default function ParaEmpresas() {
           </h1>
         </div>
         <div className="formulario">
-          <form onSubmit={handleSubmit(onSubmit)}>
+          <form className='form-cadastro' onSubmit={handleSubmit(onSubmit)}>
             <h2>Cadastro</h2>
 
             <label>

@@ -34,35 +34,43 @@
   padding: 2rem;
 }
 
-.formulario {
+.form-reservas {
   display: flex;
   flex-direction: column;
+  align-items: center;
   gap: 1rem;
   width: 100%;
   background-color: transparent;
   color: var(--text-color-three);
 }
 
-.formulario input {
+.form-reservas input {
   padding: 10px;
-  //   border: black;
   background-color: var(--bg-color-two);
   width: 40%;
   border-radius: 10px;
   font-size: 1.5rem;
+  border: 1px solid transparent;
 }
 
-.formulario input::placeholder {
+.form-reservas input:focus {
+  border: 1px solid transparent;
+  box-shadow: 0 0 5px 5px rgba(255, 230, 0, 0.322);
+  outline: 1px solid var(--bg-color-two);
+  outline-offset: 2px;
+}
+
+.form-reservas input::placeholder {
   color: var(--text-color-three);
 }
 
-.formulario input[type='date'] {
+.form-reservas input[type='date'] {
   color: var(--text-color-three);
   padding-right: 0.5rem;
   font-weight: 500;
 }
 
-.formulario input[type='time'] {
+.form-reservas input[type='time'] {
   color: var(--text-color-three);
   padding-right: 0.5rem;
   font-weight: 500;

@@ -22,7 +22,7 @@
     width: 100%;
     height: 1px;
     background: linear-gradient(to right, transparent, var(--bg-color-one), transparent);
-    animation: slideBorder 2s linear infinite;
+    animation: slideBorder 4s linear infinite;
   }
 }
 
@@ -39,7 +39,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 1rem;
+  gap: 1.5rem;
   margin: 0 1.125rem;
 
   a {

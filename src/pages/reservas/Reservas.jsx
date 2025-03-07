@@ -8,8 +8,6 @@ export default function Reservas() {
   const {
     register,
     handleSubmit,
-    watch,
-    setValue,
     formState: { errors },
     reset,
   } = useForm();
@@ -36,7 +34,7 @@ export default function Reservas() {
       <section>
         <div className="formulario-container">
           {mensagem && <p className="success-message">{mensagem}</p>}
-          <form className="formulario" onSubmit={handleSubmit(onSubmit)}>
+          <form className="form-reservas" onSubmit={handleSubmit(onSubmit)}>
             
               <input
                 type="text"
